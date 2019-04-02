@@ -1,0 +1,7 @@
+{
+  "extends": ["eslint-config-welcome", "standard-preact"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}

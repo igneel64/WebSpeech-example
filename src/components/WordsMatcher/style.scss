@@ -1,0 +1,36 @@
+@import "../globals";
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  color: white;
+}
+
+.box{
+  height: 53px;
+  padding: 15px 20px;
+  font-size: 32px;
+  line-height: 50px;
+  border-radius: 6px;
+  text-align: center;
+  background-color: gray;
+  margin: 20px 20px;
+  &:after{
+    margin-left: 20px;
+  }
+}
+
+.found{
+  background-color: $found;
+  &:after{
+    content: "\2713";
+  }
+}
+
+.pending{
+  background-color: $pending;
+  &:after{
+    content: "\2609";
+  }
+  
+}

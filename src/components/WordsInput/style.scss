@@ -1,0 +1,46 @@
+.container {
+  max-width: 500px;
+}
+
+.inputContainer {
+  position: relative;
+  border-bottom: 1px solid #5d5d5d;
+  button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    background: transparent;
+    font-size: 30px;
+  }
+}
+
+.input {
+  outline: none;
+  border: none;
+  background: 0 0;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 20px 0;
+  box-sizing: border-box;
+  width: calc(100% - 60px);
+  color: #fff;
+  transition: border 400ms linear;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.closeIcon {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}

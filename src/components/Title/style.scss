@@ -1,0 +1,28 @@
+@import "../globals";
+
+.upper {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-weight: bold;
+  color: $highlights;
+}
+
+h1{
+  font-size: 115px;
+	margin-top: 0px;
+	line-height: 1.2;
+}
+
+@media only screen and (max-width: 767px){
+  .upper{
+    text-align: center;
+    font-size: 22px;
+  }
+
+  h1{
+    text-align: center;
+    font-size: 40px;
+  }
+}

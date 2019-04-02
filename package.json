@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "webspeech",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "build": "preact build --no-prerender -c preact.config.js --clean --template src/template.html",
+    "serve": "npm run build && preact serve",
+    "dev": "preact watch --https=true",
+    "lint": "eslint src"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "eslintIgnore": [
+    "build/*"
+  ],
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.2",
+    "eslint": "^4.19.1",
+    "eslint-config-standard-preact": "^1.1.6",
+    "eslint-config-synacor": "^1.1.0",
+    "eslint-config-welcome": "^1.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^1.3.1",
+    "if-env": "^1.0.0",
+    "preact-cli": "^2.0.0",
+    "prettier": "^1.16.4"
+  },
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "preact": "^10.0.0-alpha.2",
+    "preact-compat": "^3.17.0",
+    "sass-loader": "^7.1.0"
+  }
+}
