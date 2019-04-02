@@ -1,4 +1,10 @@
+html{
+	height: 100%;
+}
+
 body {
+	min-height: 100%;
+	overflow: hidden;
 	font: 14px/1.21 'Helvetica Neue', arial, sans-serif;
 	font-weight: 400;
 	background-color:#262a33;
